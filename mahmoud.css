@@ -1,0 +1,40 @@
+body {
+  background: red;
+}
+
+#background {
+    width:300px;
+    height:400px;
+    background:#eee;
+    margin:50px auto;
+   
+}
+
+input {
+    border:5;
+    color:#fff;
+    background-color: blue;
+    width: 50px;
+    height: 40px;
+}
+
+#screen {
+	background-color: black;
+	width: 210px;
+
+}
+#zero {
+	width: 105px;
+}
+#del {
+	
+	width: 105px;
+	background-color: red;
+}
+#equl{
+	width: 105px;
+	background-color: green;
+}
+
+
+

@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mahmoud Calculator</title>
-    <link rel="stylesheet" type="text/css" href="cal.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="mahmoud.css">
 </head>
-<body>
-    <div id="background"><!-- Main background -->
-             
-        <div id="result"></div>
-             
-         <div id="main">
-             <div id="first-rows">
-              <button class="del-bg" id="delete">Del</button>
-                 <button value="%" class="btn-style operator opera-bg fall-back">%</button>
-                 <button value="+" class="btn-style opera-bg value align operator">+</button>
-                 </div>
-                 
-               <div class="rows">
-             <button value="7" class="btn-style num-bg num first-child">7</button>
-                 <button value="8" class="btn-style num-bg num">8</button>
-                 <button value="9" class="btn-style num-bg num">9</button>
-                 <button value="-" class="btn-style opera-bg operator">-</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="4" class="btn-style num-bg num first-child">4</button>
-                 <button value="5" class="btn-style num-bg num">5</button>
-                 <button value="6" class="btn-style num-bg num">6</button>
-                 <button value="*" class="btn-style opera-bg operator">x</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="1" class="btn-style num-bg num first-child">1</button>
-                 <button value="2" class="btn-style num-bg num">2</button>
-                 <button value="3" class="btn-style num-bg num">3</button>
-                 <button value="/" class="btn-style opera-bg operator">/</button>
-                 </div>
-                 
-                 <div class="rows">
-                 <button value="0" class="num-bg zero" id="delete">0</button>
-                 <button value="." class="btn-style num-bg period fall-back">.</button>
-                 <button value="=" id="eqn-bg" class="eqn align">=</button>
-                 </div>
-                
-             </div>
-         
-         </div>
-         
+<body id="background">
+    <div id="main">
+     <form name= "result">
+
+        <div id="first-rows">
+            <input type="text" name="answer" id="screen"> <br>
+            <input type="button" value=" = " onclick="result.answer.value = eval(result.answer.value) " id="equl">
+            <input type="button" value=" Del " onclick="result.answer.value = '' " id="del">
+        </div>
+        <div class="rows">
+            <input type="button" value=" 1 " onclick="result.answer.value+= '1' ">
+            <input type="button" value=" 2 " onclick="result.answer.value += '2' ">
+            <input type="button" value=" 3 " onclick="result.answer.value += '3' ">
+            <input type="button" value=" + " onclick="result.answer.value += '+' ">
+        </div>
+        <div class="rows">
+            <input type="button" value=" 4 " onclick="result.answer.value += '4' ">
+            <input type="button" value=" 5 " onclick="result.answer.value += '5' ">
+            <input type="button" value=" 6 " onclick="result.answer.value += '6' ">
+            <input type="button" value=" - " onclick="result.answer.value += '-' ">
+        </div>
+        <div class="rows">
+            <input type="button" value=" 7 " onclick="result.answer.value += '7' ">
+            <input type="button" value=" 8 " onclick="result.answer.value += '8' ">
+            <input type="button" value=" 9 " onclick="result.answer.value += '9' ">
+            <input type="button" value=" * " onclick="result.answer.value += '*' ">
+        </div>
+        <div class="rows">
+            <input id="zero" type="button" value=" 0 " onclick="result.answer.value += '0' ">
+            <input type="button" value=" . " onclick="result.answer.value += '.' ">
+            
+            <input type="button" value=" / " onclick="result.answer.value += '/' ">
+        </div>
+        <div class="rows">
+            
+        </div>
+
+
+
+     </form>
+    </div> 
 </body>
-    <script src="mahmoud.js"></script>
 </html>
-
-
-        
