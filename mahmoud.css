@@ -5,35 +5,35 @@ body {
 #background {
     width:300px;
     height:400px;
-    background:#eee;
+    background: #5b7582;
     margin:50px auto;
    
 }
 
 input {
     border:5;
-    color:#fff;
-    background-color: blue;
+    color: #ccc;
+    background-color: #225fe2;
     width: 50px;
     height: 40px;
 }
 
 #screen {
-	background-color: black;
-	width: 210px;
+    background-color: black;
+    width: 210px;
 
 }
 #zero {
-	width: 105px;
+    width: 105px;
 }
 #del {
-	
-	width: 105px;
-	background-color: red;
+    
+    width: 105px;
+    background-color: #db3f3f;
 }
 #equl{
-	width: 105px;
-	background-color: green;
+    width: 105px;
+    background-color: #4ec979;
 }
 
 
